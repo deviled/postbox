@@ -1,8 +1,8 @@
 # configs
-.idea
+.idea/
 
 # webpack
-build
+build/
 
 # yarn
 .yarn/*
