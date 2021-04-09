@@ -53,7 +53,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:7.20.3"],
             ["eslint-plugin-react-hooks", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:4.0.8"],
             ["html-webpack-plugin", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:5.3.1"],
-            ["husky", "npm:6.0.0"],
             ["object-assign", "npm:4.1.1"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
             ["postcss", "npm:8.2.9"],
@@ -4193,15 +4192,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["husky", [
-        ["npm:6.0.0", {
-          "packageLocation": "./.yarn/cache/husky-npm-6.0.0-384872ea98-61e1f7f53f.zip/node_modules/husky/",
-          "packageDependencies": [
-            ["husky", "npm:6.0.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["iconv-lite", [
         ["npm:0.4.24", {
           "packageLocation": "./.yarn/cache/iconv-lite-npm-0.4.24-c5c4ac6695-a9b9521066.zip/node_modules/iconv-lite/",
@@ -6389,7 +6379,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:7.20.3"],
             ["eslint-plugin-react-hooks", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:4.0.8"],
             ["html-webpack-plugin", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:5.3.1"],
-            ["husky", "npm:6.0.0"],
             ["object-assign", "npm:4.1.1"],
             ["pnp-webpack-plugin", "npm:1.6.4"],
             ["postcss", "npm:8.2.9"],
