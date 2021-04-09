@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "target": "es6",
+    "lib": ["dom", "ES2017", "ES2019", "es2020"],
+    "jsx": "react",
+    "module": "es6",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports" : true,
+    "charset": "utf8",
+    "inlineSourceMap": false,
+    "strictFunctionTypes": true,
+    "skipLibCheck": true,
+    "outDir": "./build"
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
