@@ -4,7 +4,7 @@
     "target": "es6",
     "lib": ["dom", "ES2017", "ES2019", "es2020"],
     "jsx": "react",
-    "module": "es6",
+    "module": "esnext",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "preserveConstEnums": true,
@@ -17,6 +17,6 @@
     "outDir": "./build"
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
   ]
 }
