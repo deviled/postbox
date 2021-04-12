@@ -1,11 +1,20 @@
 import React, { FC } from 'react';
 import { render } from 'react-dom';
-import './index.scss';
-import { browserSetup } from '__tests__/mocks/browserSetup';
+import { BaseRouting } from 'routing';
 
-browserSetup.start();
+import 'normalize.css';
 
-const App: FC = () => <div />;
+const mockServiceWorker = async () => {
+  const { browserSetup: { start } } = await import('__tests__/mocks/browserSetup');
+  await start({ waitUntilReady: true });
+};
+
+const App: FC = () => {
+  if (process.env.NODE_ENV === 'development') {
+    mockServiceWorker();
+  }
+  return <BaseRouting />;
+};
 
 render(
   <App />,

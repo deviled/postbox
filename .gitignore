@@ -1,6 +1,6 @@
 # configs
 .idea/
-mockServiceWorker.js
+public/mockServiceWorker.js
 
 # webpack
 build/

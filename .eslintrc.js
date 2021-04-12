@@ -6,7 +6,9 @@ module.exports = {
     project: path.resolve(__dirname, './tsconfig.json'),
   },
   rules: {
+    'react/prop-types': 0,
+    'react/jsx-props-no-spreading': 0,
     'import/no-default-export': 2,
-    'import/prefer-default-export': 0
+    'import/prefer-default-export': 0,
   }
 };
