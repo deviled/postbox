@@ -1,13 +1,15 @@
 export type Palette = {
+  primary: string;
   text: string;
   background: string;
   error: string;
-  info: string;
+  white: string;
 };
 
 export const palette: Palette = {
+  primary: 'lightskyblue',
   text: 'black',
   background: 'lightgray',
-  error: 'darkred',
-  info: 'aqua',
+  error: 'crimson',
+  white: 'white',
 };

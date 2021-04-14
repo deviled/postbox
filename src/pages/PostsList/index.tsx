@@ -3,7 +3,7 @@ import React, { FC, Fragment, useMemo } from 'react';
 import { usePostsBySenderQuery, usePostsQuery } from 'api/queries';
 import { getSenderList } from 'tools/mappers/getSenderList';
 import { PAGES } from 'tools/constants';
-import { Layout } from 'components/layouts/Layout';
+import { BaseLayout } from 'components/layouts/BaseLayout';
 import { Loader } from 'components/atoms/Loader';
 import { PostItem } from 'components/atoms/PostItem';
 
@@ -17,7 +17,7 @@ export const PostsList: FC = () => {
   }
 
   return (
-    <Layout senders={senders}>
+    <BaseLayout senders={senders}>
       {postsData?.pages.map(({ data: { posts, page } }) => (
         <Fragment key={page}>
           {posts.map(({ id: postId, message, created_time }) => (
@@ -27,6 +27,6 @@ export const PostsList: FC = () => {
           ))}
         </Fragment>
       ))}
-    </Layout>
+    </BaseLayout>
   );
 };

@@ -12,6 +12,12 @@ describe('Input.tsx', () => {
     expect(baseElement).toMatchSnapshot();
   });
 
+  it('should match snapshot with error', () => {
+    const { baseElement } = render(<Input type="text" placeholder="Search..." isError />);
+
+    expect(baseElement).toMatchSnapshot();
+  });
+
   it('should have value typed', () => {
     const INPUT_VALUE = 'some input value';
 

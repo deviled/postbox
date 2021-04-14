@@ -1,5 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`SenderItem.tsx should match active snapshot 1`] = `
+<body>
+  .c0 {
+  padding: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  border: 1px solid lightgray;
+  background-color: aqua;
+}
+
+.c1 {
+  padding: 4px 8px;
+  border-radius: 50%;
+  margin-left: 8px;
+  background: lightgray;
+}
+
+<div>
+    <button
+      class="c0"
+    >
+      Britany Heise
+      <span
+        class="c1"
+      >
+        10
+      </span>
+    </button>
+  </div>
+</body>
+`;
+
 exports[`SenderItem.tsx should match snapshot 1`] = `
 .c0 {
   padding: 16px;
@@ -24,7 +59,7 @@ exports[`SenderItem.tsx should match snapshot 1`] = `
     <button
       class="c0"
     >
-      
+      Britany Heise
       <span
         class="c1"
       >

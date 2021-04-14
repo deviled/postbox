@@ -5,10 +5,34 @@ exports[`Input.tsx should match snapshot 1`] = `
   width: auto;
   padding: 8px;
   margin: 4px 0px;
+  border: 1px solid lightgray;
+  border-color: lightgray;
+  background-color: white;
 }
 
 <body>
   <div>
+    <input
+      class="c0"
+      placeholder="Search..."
+      type="text"
+    />
+  </div>
+</body>
+`;
+
+exports[`Input.tsx should match snapshot with error 1`] = `
+<body>
+  .c0 {
+  width: auto;
+  padding: 8px;
+  margin: 4px 0px;
+  border: 1px solid lightgray;
+  border-color: crimson;
+  background-color: white;
+}
+
+<div>
     <input
       class="c0"
       placeholder="Search..."

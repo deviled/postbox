@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import { IPost } from 'types';
 
 const getPostFixture = (props?: Partial<IPost>): IPost => ({
@@ -11,11 +10,12 @@ const getPostFixture = (props?: Partial<IPost>): IPost => ({
   ...props,
 });
 
-const getPostsFixture = (length: number): IPost[] => Array.from({ length }, (_, index) => getPostFixture({
-  id: `post_${index}`,
-  from_id: `user_${index}`,
-  from_name: `User ${index}`,
-  created_time: new Date(index * 86400000).toISOString(),
-}));
+const getPostsFixture = (length: number): IPost[] => Array.from({ length },
+  (_, index) => getPostFixture({
+    id: `post_${index}`,
+    from_id: `user_${index}`,
+    from_name: `User ${index}`,
+    created_time: new Date(index * 86400000).toISOString(),
+  }));
 
 export { getPostFixture, getPostsFixture };

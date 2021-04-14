@@ -3,7 +3,7 @@ import React, { FC, useMemo } from 'react';
 import { usePostsBySenderQuery } from 'api/queries';
 import { getSenderList } from 'tools/mappers/getSenderList';
 import { PAGES } from 'tools/constants';
-import { Layout } from 'components/layouts/Layout';
+import { BaseLayout } from 'components/layouts/BaseLayout';
 import { useParams } from '@reach/router';
 import { PostItem } from 'components/atoms/PostItem';
 import { IPost } from 'types';
@@ -21,12 +21,12 @@ export const PostsView: FC = () => {
   }
 
   return (
-    <Layout senders={senders}>
+    <BaseLayout senders={senders}>
       {posts.map(({ id: postId, message, created_time }) => (
         <PostItem key={postId} createdTime={created_time}>
           {message}
         </PostItem>
       ))}
-    </Layout>
+    </BaseLayout>
   );
 };

@@ -3,8 +3,9 @@
 exports[`palette should match snapshot 1`] = `
 Object {
   "background": "lightgray",
-  "error": "darkred",
-  "info": "aqua",
+  "error": "crimson",
+  "primary": "dodgerblue",
   "text": "black",
+  "white": "white",
 }
 `;

@@ -12,7 +12,7 @@ const StyledButton = styled.button<IStyledButtonProps>(({ theme, isActive }) => 
   font-size: ${theme.fontSize[16]};
   margin-bottom: ${theme.spacing(16)};
   border: ${theme.borders[1]};
-  background-color: ${isActive ? theme.palette.info : 'initial'};
+  background-color: ${isActive ? theme.palette.primary : 'initial'};
 `);
 
 const StyledSpan = styled.span(({ theme }) => css`

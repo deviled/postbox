@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { Input } from 'components/atoms/Input';
 import { Label } from 'components/atoms/Label';
 import { InputError } from 'components/atoms/InputError';
-import { Centered } from 'components/layouts/Centered';
+import { Centered } from 'components/layouts/CenteredLayout';
 import { IRegisterParams } from 'api/requests';
 import { useRegisterQuery } from 'api/mutators';
 import { Loader } from 'components/atoms/Loader';
@@ -26,13 +26,21 @@ export const Register: FC = () => {
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Label>
           Name
-          <Input type="text" {...register('name', { required: true })} />
+          <Input
+            type="text"
+            isError={!!errors.name}
+            {...register('name', { required: true })}
+          />
           {errors.name && <InputError>Required</InputError>}
         </Label>
 
         <Label>
           Email
-          <Input type="email" {...register('email', { required: true })} />
+          <Input
+            type="email"
+            isError={!!errors.email}
+            {...register('email', { required: true })}
+          />
           {errors.email && <InputError>Required</InputError>}
         </Label>
 
