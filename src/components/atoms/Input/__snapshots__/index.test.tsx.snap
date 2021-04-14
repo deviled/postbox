@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input.tsx should match snapshot 1`] = `
+.c0 {
+  width: auto;
+  padding: 8px;
+  margin: 4px 0px;
+}
+
+<body>
+  <div>
+    <input
+      class="c0"
+      placeholder="Search..."
+      type="text"
+    />
+  </div>
+</body>
+`;

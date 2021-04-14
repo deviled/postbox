@@ -10,6 +10,11 @@ module.exports = {
   moduleNameMapper: {
     '^__tests__(.*)$': '<rootDir>/src/__tests__/$1',
     '^api(.*)$': '<rootDir>/src/api/$1',
+    '^pages(.*)$': '<rootDir>/src/pages/$1',
+    '^theme(.*)$': '<rootDir>/src/theme/$1',
+    '^tools(.*)$': '<rootDir>/src/tools/$1',
+    '^types(.*)$': '<rootDir>/src/types/$1',
+    '^routing(.*)$': '<rootDir>/src/routing/$1',
     '^components(.*)$': '<rootDir>/src/components/$1',
   },
   collectCoverageFrom: [

@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import { IPost } from 'types';
 
-const getPostFixture = (props: Partial<IPost>): IPost => ({
+const getPostFixture = (props?: Partial<IPost>): IPost => ({
   id: 'post_1',
   from_id: 'user_4',
   from_name: 'Britany Heise',

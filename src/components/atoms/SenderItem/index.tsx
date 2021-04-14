@@ -1,4 +1,4 @@
-import React, { ComponentPropsWithRef, FC } from 'react';
+import React, { ComponentPropsWithRef, forwardRef } from 'react';
 import { ISender } from 'types';
 import styled, { css } from 'styled-components';
 
@@ -27,9 +27,11 @@ interface ISenderItem extends IStyledButtonProps, ComponentPropsWithRef<'button'
   count: ISender['count'];
 }
 
-export const SenderItem: FC<ISenderItem> = ({ name, count, ...rest }) => (
-  <StyledButton {...rest}>
-    {name}
-    <StyledSpan>{count}</StyledSpan>
-  </StyledButton>
+export const SenderItem = forwardRef<HTMLButtonElement, ISenderItem>(
+  ({ name, count, ...rest }, ref) => (
+    <StyledButton ref={ref} {...rest}>
+      {name}
+      <StyledSpan>{count}</StyledSpan>
+    </StyledButton>
+  ),
 );
