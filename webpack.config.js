@@ -12,7 +12,7 @@ const PUBLIC_DIR = './public';
 const config = {
   entry: {
     index: { import: './src/index.tsx', dependOn: 'react-vendors' },
-    'react-vendors': ['react', 'react-dom', '@reach/router', 'object-assign'],
+    'react-vendors': ['react', 'react-dom', 'react-is', 'object-assign', '@reach/router'],
   },
   output: {
     path: resolve(__dirname, BUILD_DIR),

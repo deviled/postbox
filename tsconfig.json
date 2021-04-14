@@ -16,6 +16,9 @@
     "skipLibCheck": true,
     "outDir": "./build"
   },
+  "files": [
+    "src/theme/theme.d.ts"
+  ],
   "include": [
     "src/**/*",
   ]

@@ -1,20 +1,29 @@
 import React, { FC } from 'react';
 import { render } from 'react-dom';
 import { BaseRouting } from 'routing';
+import { ReactQueryDevtools } from 'react-query/devtools';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { ThemeProvider } from 'styled-components';
+import { theme } from 'theme';
 
 import 'normalize.css';
 
-const mockServiceWorker = async () => {
-  const { browserSetup: { start } } = await import('__tests__/mocks/browserSetup');
-  await start({ waitUntilReady: true });
-};
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+    },
+  },
+});
 
-const App: FC = () => {
-  if (process.env.NODE_ENV === 'development') {
-    mockServiceWorker();
-  }
-  return <BaseRouting />;
-};
+const App: FC = () => (
+  <QueryClientProvider client={queryClient}>
+    <ThemeProvider theme={theme}>
+      <BaseRouting />
+    </ThemeProvider>
+    <ReactQueryDevtools />
+  </QueryClientProvider>
+);
 
 render(
   <App />,

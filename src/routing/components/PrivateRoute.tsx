@@ -1,7 +1,7 @@
 import React, { ComponentType, FC } from 'react';
 import { Redirect, RouteComponentProps } from '@reach/router';
-import { LOCAL_STORAGE_TOKEN } from 'tools/auth';
 import { LOGIN_PATH } from 'routing/routes';
+import { LOCAL_STORAGE_TOKEN } from 'tools/constants';
 
 interface IPrivateRouterProps extends RouteComponentProps {
   component: ComponentType;
