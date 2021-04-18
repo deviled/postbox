@@ -1,19 +1,23 @@
-import React, { ComponentPropsWithRef, forwardRef } from 'react';
 import styled, { css } from 'styled-components';
+import {
+  border, BordersProps, palette, PaletteProps, sizing, SizingProps, spacing, SpacingProps,
+} from '@material-ui/system';
 
-interface IInputProps extends ComponentPropsWithRef<'input'> {
-  isError?: boolean;
-}
+type InputProps = SpacingProps & PaletteProps & BordersProps & SizingProps;
 
-const StyledInput = styled.input<IInputProps>(({ theme, type, isError }) => css`
-  width: auto;
-  padding: ${theme.spacing(8)};
-  margin: ${theme.spacing(4, 0)};
-  border: ${theme.borders[1]};
-  border-color: ${isError ? theme.palette.error : theme.palette.background};
-  background-color: ${type === 'submit' ? theme.palette.primary : theme.palette.white};
+export const Input = styled.input<InputProps>(({ theme }) => css<InputProps>`
+  font-size: ${theme.typography.fontSize[16]};
+  color: ${theme.palette.text};
+  padding: ${theme.spacing(12)};
+  border: 1px solid ${theme.palette.divider};
+  background-color: ${theme.palette.white};
+
+  ${spacing};
+  ${palette};
+  ${border};
+  ${sizing};
+  
+  &:hover {
+    border-color: ${theme.palette.text};
+  }
 `);
-
-export const Input = forwardRef<HTMLInputElement, IInputProps>((props, ref) => (
-  <StyledInput ref={ref} {...props} />
-));

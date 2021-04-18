@@ -1,17 +1,17 @@
 import React, { FC } from 'react';
 import { PublicRoute } from 'routing/components/PublicRoute';
-import { Register } from 'pages/Register';
-import { LOGIN_PATH, POSTS_LIST_PATH, POSTS_VIEW_PATH } from 'routing/routes';
+import { Login } from 'pages/Login';
+import { LOGIN_PAGE_PATH, POSTS_PAGE_PATH, SENDER_PAGE_PATH } from 'routing/routes';
 import { PrivateRoute } from 'routing/components/PrivateRoute';
-import { PostsList } from 'pages/PostsList';
-import { PostsView } from 'pages/PostsView';
+import { Posts } from 'pages/Posts';
+import { Sender } from 'pages/Sender';
 import { Redirect, Router } from '@reach/router';
 
 export const BaseRouting: FC = () => (
   <Router>
-    <PublicRoute component={Register} path={LOGIN_PATH} />
-    <PrivateRoute component={PostsList} path={POSTS_LIST_PATH} />
-    <PrivateRoute component={PostsView} path={POSTS_VIEW_PATH} />
-    <Redirect default from="/" to={POSTS_LIST_PATH} noThrow />
+    <PublicRoute component={Login} path={LOGIN_PAGE_PATH} />
+    <PrivateRoute component={Posts} path={POSTS_PAGE_PATH} />
+    <PrivateRoute component={Sender} path={SENDER_PAGE_PATH} />
+    <Redirect default from="/" to={POSTS_PAGE_PATH} noThrow />
   </Router>
 );

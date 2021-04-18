@@ -4,6 +4,7 @@ exports[`spacing should match snapshot 1`] = `
 Object {
   "0": "0px",
   "12": "12px",
+  "14": "14px",
   "16": "16px",
   "2": "2px",
   "20": "20px",

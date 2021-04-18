@@ -1,13 +1,13 @@
 import 'styled-components';
+
 import { Palette } from './palette';
-import { FontSize } from './fontSize';
-import { spacing } from './spacing';
+import { Typography } from './typography';
+import { Space } from './spacing';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
-    fontSize: FontSize;
     palette: Palette;
-    spacing: typeof spacing;
-    borders: string[];
+    spacing: (...args: Space[]) => string;
+    typography: Typography;
   }
 }

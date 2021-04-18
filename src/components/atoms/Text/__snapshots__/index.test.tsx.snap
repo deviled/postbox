@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text.tsx should match snapshot 1`] = `
+.c0 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #121212;
+  color: #ffffff;
+  background-color: #f44336;
+}
+
+<body>
+  <div>
+    <span
+      class="c0"
+      color="white"
+    >
+      Error input
+    </span>
+  </div>
+</body>
+`;

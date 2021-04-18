@@ -5,7 +5,7 @@ import {
 } from '@reach/router';
 import { render as rootRender, RenderOptions } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
-import { queryClient } from 'api/queryClient';
+import { queryClient } from 'api/configs/queryClient';
 import { theme } from 'theme';
 
 const Providers: FC = ({ children }) => (

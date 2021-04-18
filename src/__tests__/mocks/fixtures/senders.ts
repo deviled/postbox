@@ -7,10 +7,10 @@ const getSenderFixture = (props?: Partial<ISender>): ISender => ({
   ...props,
 });
 
-const getSendersFixture = (length: number): ISender[] => Array.from({ length },
+const getSendersFixture = (length: number = 10): ISender[] => Array.from({ length },
   (_, index) => getSenderFixture({
     id: `user_${index}`,
-    name: `User ${index}`,
+    name: `Name ${index}`,
     count: index * 10,
   }));
 

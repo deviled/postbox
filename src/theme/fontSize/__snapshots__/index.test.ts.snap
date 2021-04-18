@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`fontSize should match snapshot 1`] = `
-Object {
-  "12": "0.75rem",
-  "14": "0.875rem",
-  "16": "1rem",
-}
-`;

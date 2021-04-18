@@ -1,4 +1,4 @@
-export type Space = 0 | 2 | 4 | 8 | 12 | 16 | 20 | 24 | 32;
+export type Space = 0 | 2 | 4 | 8 | 12 | 14 | 16 | 20 | 24 | 32;
 
 export const values: Record<Space, string> = {
   0: '0px',
@@ -6,6 +6,7 @@ export const values: Record<Space, string> = {
   4: '4px',
   8: '8px',
   12: '12px',
+  14: '14px',
   16: '16px',
   20: '20px',
   24: '24px',

@@ -16,6 +16,7 @@ module.exports = {
     '^types(.*)$': '<rootDir>/src/types/$1',
     '^routing(.*)$': '<rootDir>/src/routing/$1',
     '^components(.*)$': '<rootDir>/src/components/$1',
+    '^templates(.*)$': '<roodDir>/src/templates/$1',
   },
   collectCoverageFrom: [
     "src/**/*.ts{,x}",

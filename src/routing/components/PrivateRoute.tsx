@@ -1,6 +1,6 @@
 import React, { ComponentType, FC } from 'react';
 import { Redirect, RouteComponentProps } from '@reach/router';
-import { LOGIN_PATH } from 'routing/routes';
+import { LOGIN_PAGE_PATH } from 'routing/routes';
 import { LOCAL_STORAGE_TOKEN } from 'tools/constants';
 
 interface IPrivateRouterProps extends RouteComponentProps {
@@ -12,5 +12,5 @@ export const PrivateRoute: FC<IPrivateRouterProps> = ({ component: Component }) 
   if (token) {
     return <Component />;
   }
-  return <Redirect to={LOGIN_PATH} noThrow />;
+  return <Redirect to={LOGIN_PAGE_PATH} noThrow />;
 };

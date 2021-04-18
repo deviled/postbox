@@ -1,8 +1,8 @@
 import { setupServer } from 'msw/node';
-import { authenticationHandlers } from '__tests__/mocks/handlers/authentication';
+import { loginHandlers } from '__tests__/mocks/handlers/login';
 import { postsHandlers } from '__tests__/mocks/handlers/posts';
 
 export const serverSetup = setupServer(
-  ...authenticationHandlers,
+  ...loginHandlers,
   ...postsHandlers,
 );

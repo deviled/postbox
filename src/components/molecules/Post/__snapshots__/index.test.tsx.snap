@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post.tsx should match snapshot 1`] = `
+.c1 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #121212;
+  font-weight: bold;
+}
+
+.c0 {
+  font-size: 1rem;
+  padding: 8px 16px;
+  border: 1px solid #cccccc;
+  margin-bottom: 32px;
+}
+
+<body>
+  <div>
+    <article
+      class="c0"
+    >
+      <p
+        class="c1"
+        font-weight="bold"
+      >
+        November 13, 2020 02:02:04
+      </p>
+      <hr />
+      <p>
+        initiative bury oak tired bracket habitat save grow desert credit card business product connection master boy respectable sweet depression
+      </p>
+    </article>
+  </div>
+</body>
+`;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`typography should match snapshot 1`] = `
+Object {
+  "fontSize": Object {
+    "12": "0.75rem",
+    "14": "0.875rem",
+    "16": "1rem",
+    "18": "1.125rem",
+  },
+  "fontWeight": Object {
+    "bold": 600,
+    "light": 200,
+    "regular": 400,
+  },
+}
+`;

@@ -10,11 +10,11 @@ const getPostFixture = (props?: Partial<IPost>): IPost => ({
   ...props,
 });
 
-const getPostsFixture = (length: number): IPost[] => Array.from({ length },
+const getPostsFixture = (length: number = 10): IPost[] => Array.from({ length },
   (_, index) => getPostFixture({
     id: `post_${index}`,
     from_id: `user_${index}`,
-    from_name: `User ${index}`,
+    from_name: `Name ${index}`,
     created_time: new Date(index * 86400000).toISOString(),
   }));
 

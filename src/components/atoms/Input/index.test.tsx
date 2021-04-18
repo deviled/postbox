@@ -13,7 +13,7 @@ describe('Input.tsx', () => {
   });
 
   it('should match snapshot with error', () => {
-    const { baseElement } = render(<Input type="text" placeholder="Search..." isError />);
+    const { baseElement } = render(<Input type="text" placeholder="Search..." />);
 
     expect(baseElement).toMatchSnapshot();
   });

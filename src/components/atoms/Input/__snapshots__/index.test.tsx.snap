@@ -2,12 +2,15 @@
 
 exports[`Input.tsx should match snapshot 1`] = `
 .c0 {
-  width: auto;
-  padding: 8px;
-  margin: 4px 0px;
-  border: 1px solid lightgray;
-  border-color: lightgray;
-  background-color: white;
+  font-size: 1rem;
+  color: #121212;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+
+.c0:hover {
+  border-color: #121212;
 }
 
 <body>
@@ -24,12 +27,15 @@ exports[`Input.tsx should match snapshot 1`] = `
 exports[`Input.tsx should match snapshot with error 1`] = `
 <body>
   .c0 {
-  width: auto;
-  padding: 8px;
-  margin: 4px 0px;
-  border: 1px solid lightgray;
-  border-color: crimson;
-  background-color: white;
+  font-size: 1rem;
+  color: #121212;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+
+.c0:hover {
+  border-color: #121212;
 }
 
 <div>

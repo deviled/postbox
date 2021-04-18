@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button.tsx should match snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px 32px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  background-color: #2196f3;
+  color: #ffffff;
+  background-color: #90caf9;
+  margin-bottom: 16px;
+}
+
+.c0:hover {
+  -webkit-filter: brightness(85%);
+  filter: brightness(85%);
+}
+
+.c0:disabled {
+  -webkit-filter: initial;
+  filter: initial;
+  background-color: #efefef;
+}
+
+<body>
+  <div>
+    <button
+      class="c0"
+      color="white"
+      type="submit"
+    >
+      Submit
+    </button>
+  </div>
+</body>
+`;

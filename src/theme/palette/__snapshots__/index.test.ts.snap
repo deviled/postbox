@@ -2,10 +2,15 @@
 
 exports[`palette should match snapshot 1`] = `
 Object {
-  "background": "lightgray",
-  "error": "crimson",
-  "primary": "dodgerblue",
-  "text": "black",
-  "white": "white",
+  "background": "#efefef",
+  "divider": "#cccccc",
+  "error": "#f44336",
+  "info": "#90caf9",
+  "primary": "#2196f3",
+  "secondary": "#f48fb1",
+  "success": "#4caf50",
+  "text": "#121212",
+  "warning": "#ff9800",
+  "white": "#ffffff",
 }
 `;
