@@ -1,11 +1,7 @@
-export type Dictionary<T> = Record<string, T>;
-
-export type OrderType = 'asc' | 'desc';
-
 export interface ISender {
   id: string;
   name: string;
-  count: number;
+  posts: IPost[];
 }
 
 export interface IPost {

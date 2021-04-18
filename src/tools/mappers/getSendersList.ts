@@ -1,10 +1,10 @@
-import { Dictionary, IPost, ISender } from 'types';
+import groupBy from 'lodash.groupby';
+import { IPost, ISender } from 'types';
 
-export const getSendersList = (data: Dictionary<IPost[]> = {}): ISender[] => {
-  const posts = Object.values(data);
-  return posts.map((senderPosts) => {
-    const count = senderPosts.length;
-    const [{ from_id: id, from_name: name }] = senderPosts;
-    return { id, name, count };
+export const getSendersList = (data: IPost[] = []): ISender[] => {
+  const values = Object.values(groupBy(data, 'from_id'));
+  return values.map((posts) => {
+    const [{ from_id: id, from_name: name }] = posts;
+    return { id, name, posts };
   });
 };

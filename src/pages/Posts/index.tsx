@@ -1,4 +1,4 @@
-import groupBy from 'lodash.groupby';
+import sortBy from 'lodash.sortby';
 import React, { FC, useMemo } from 'react';
 import { useAllPostsQuery } from 'api/queries';
 import { Loader } from 'components/molecules/Loader';
@@ -9,7 +9,7 @@ import { getSendersList } from 'tools/mappers/getSendersList';
 
 export const Posts: FC = () => {
   const { isLoading, data: posts } = useAllPostsQuery();
-  const senders = useMemo(() => getSendersList(groupBy(posts, 'from_id')), [posts]);
+  const senders = useMemo(() => sortBy(getSendersList(posts), 'name'), [posts]);
 
   if (isLoading) {
     return <Loader />;

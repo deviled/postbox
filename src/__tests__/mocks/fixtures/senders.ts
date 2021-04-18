@@ -1,9 +1,10 @@
 import { ISender } from 'types';
+import { getPostsFixture } from './posts';
 
 const getSenderFixture = (props?: Partial<ISender>): ISender => ({
   id: 'user_1',
   name: 'Britany Heise',
-  count: 10,
+  posts: getPostsFixture(10),
   ...props,
 });
 
@@ -11,7 +12,7 @@ const getSendersFixture = (length: number = 10): ISender[] => Array.from({ lengt
   (_, index) => getSenderFixture({
     id: `user_${index}`,
     name: `Name ${index}`,
-    count: index * 10,
+    posts: getPostsFixture(index),
   }));
 
 export { getSenderFixture, getSendersFixture };

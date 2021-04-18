@@ -42,6 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/dom", "npm:7.30.3"],
             ["@testing-library/jest-dom", "npm:5.11.10"],
             ["@testing-library/react", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:11.2.6"],
+            ["@testing-library/react-hooks", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:5.1.1"],
             ["@testing-library/user-event", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:13.1.2"],
             ["@types/axios", "npm:0.14.0"],
             ["@types/date-fns", "npm:2.6.0"],
@@ -1275,6 +1276,38 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@testing-library/react-hooks", [
+        ["npm:5.1.1", {
+          "packageLocation": "./.yarn/cache/@testing-library-react-hooks-npm-5.1.1-7ec3be7762-cae917a90b.zip/node_modules/@testing-library/react-hooks/",
+          "packageDependencies": [
+            ["@testing-library/react-hooks", "npm:5.1.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:5.1.1", {
+          "packageLocation": "./.yarn/$$virtual/@testing-library-react-hooks-virtual-683761c4c4/0/cache/@testing-library-react-hooks-npm-5.1.1-7ec3be7762-cae917a90b.zip/node_modules/@testing-library/react-hooks/",
+          "packageDependencies": [
+            ["@testing-library/react-hooks", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:5.1.1"],
+            ["@babel/runtime", "npm:7.13.10"],
+            ["@types/react", "npm:17.0.2"],
+            ["@types/react-dom", "npm:17.0.2"],
+            ["@types/react-test-renderer", "npm:17.0.1"],
+            ["filter-console", "npm:0.1.1"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:17.0.2"],
+            ["react-error-boundary", "virtual:683761c4c4195d8c04c23d0b2a7a5dda4c593cd4cf158830400b7a896313d4ecd94f57f8bf962eae612d54a2fed11cdb72ec24e881b7e578454b41e933b59351#npm:3.1.1"],
+            ["react-test-renderer", null]
+          ],
+          "packagePeers": [
+            "@types/react-dom",
+            "@types/react",
+            "react-dom",
+            "react-test-renderer",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@testing-library/user-event", [
         ["npm:13.1.2", {
           "packageLocation": "./.yarn/cache/@testing-library-user-event-npm-13.1.2-3465696977-46c2324f57.zip/node_modules/@testing-library/user-event/",
@@ -1696,6 +1729,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-react-dom-npm-17.0.2-e91edc6c98-abaadaa262.zip/node_modules/@types/react-dom/",
           "packageDependencies": [
             ["@types/react-dom", "npm:17.0.2"],
+            ["@types/react", "npm:17.0.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/react-test-renderer", [
+        ["npm:17.0.1", {
+          "packageLocation": "./.yarn/cache/@types-react-test-renderer-npm-17.0.1-9a42d8bb68-bd3f8c6c2a.zip/node_modules/@types/react-test-renderer/",
+          "packageDependencies": [
+            ["@types/react-test-renderer", "npm:17.0.1"],
             ["@types/react", "npm:17.0.3"]
           ],
           "linkType": "HARD",
@@ -5725,6 +5768,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["fill-range", "npm:7.0.1"],
             ["to-regex-range", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["filter-console", [
+        ["npm:0.1.1", {
+          "packageLocation": "./.yarn/cache/filter-console-npm-0.1.1-022d33b3ad-f9def51f7e.zip/node_modules/filter-console/",
+          "packageDependencies": [
+            ["filter-console", "npm:0.1.1"]
           ],
           "linkType": "HARD",
         }]
@@ -9848,6 +9900,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/dom", "npm:7.30.3"],
             ["@testing-library/jest-dom", "npm:5.11.10"],
             ["@testing-library/react", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:11.2.6"],
+            ["@testing-library/react-hooks", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:5.1.1"],
             ["@testing-library/user-event", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:13.1.2"],
             ["@types/axios", "npm:0.14.0"],
             ["@types/date-fns", "npm:2.6.0"],
@@ -10730,6 +10783,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["object-assign", "npm:4.1.1"],
             ["react", "npm:17.0.2"],
             ["scheduler", "npm:0.20.2"]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["react-error-boundary", [
+        ["npm:3.1.1", {
+          "packageLocation": "./.yarn/cache/react-error-boundary-npm-3.1.1-d8c2c7171c-8860975e5a.zip/node_modules/react-error-boundary/",
+          "packageDependencies": [
+            ["react-error-boundary", "npm:3.1.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:683761c4c4195d8c04c23d0b2a7a5dda4c593cd4cf158830400b7a896313d4ecd94f57f8bf962eae612d54a2fed11cdb72ec24e881b7e578454b41e933b59351#npm:3.1.1", {
+          "packageLocation": "./.yarn/$$virtual/react-error-boundary-virtual-b3dd3b55dd/0/cache/react-error-boundary-npm-3.1.1-d8c2c7171c-8860975e5a.zip/node_modules/react-error-boundary/",
+          "packageDependencies": [
+            ["react-error-boundary", "virtual:683761c4c4195d8c04c23d0b2a7a5dda4c593cd4cf158830400b7a896313d4ecd94f57f8bf962eae612d54a2fed11cdb72ec24e881b7e578454b41e933b59351#npm:3.1.1"],
+            ["@babel/runtime", "npm:7.13.10"],
+            ["@types/react", "npm:17.0.2"],
+            ["react", "npm:17.0.2"]
           ],
           "packagePeers": [
             "@types/react",

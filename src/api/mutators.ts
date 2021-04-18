@@ -7,6 +7,6 @@ import { POSTS_PAGE_PATH } from 'routing/routes';
 export const useRegisterQuery = () => useMutation(register, {
   onSuccess: async ({ data }) => {
     localStorage.setItem(LOCAL_STORAGE_TOKEN, data.sl_token);
-    await navigate(POSTS_PAGE_PATH);
+    navigate(POSTS_PAGE_PATH);
   },
 });

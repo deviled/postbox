@@ -6,6 +6,8 @@ import { Toolbar } from 'components/molecules/Toolbar';
 import { Button } from 'components/atoms/Button';
 import { Input } from 'components/atoms/Input';
 import { usePagination } from 'tools/hooks/usePagination';
+import { useSearch } from 'tools/hooks/useSearch';
+import { useOrder } from 'tools/hooks/useOrder';
 
 interface IPostsList {
   posts: IPost[];
@@ -13,8 +15,10 @@ interface IPostsList {
 
 const DEFAULT_POSTS: IPost[] = [];
 
-export const PostsList: FC<IPostsList> = ({ posts = DEFAULT_POSTS }) => {
-  const { items, loadMore } = usePagination<IPost>(posts, 10);
+export const PostsList: FC<IPostsList> = ({ posts: initialItems = DEFAULT_POSTS }) => {
+  const { items: filteredItems, setSearch } = useSearch<IPost>(initialItems, ['message']);
+  const { items: orderedItems, setOrder } = useOrder<IPost>(filteredItems, ['created_time']);
+  const { items: paginatedItems, nextPage } = usePagination<IPost>(orderedItems, 10);
 
   return (
     <FlexCol p={16} flex={1}>
@@ -24,7 +28,7 @@ export const PostsList: FC<IPostsList> = ({ posts = DEFAULT_POSTS }) => {
             py={12}
             px={24}
             mr={12}
-            // onClick={orderDesc}
+            onClick={() => setOrder('desc')}
             color="text"
             bgcolor="background"
           >
@@ -34,7 +38,7 @@ export const PostsList: FC<IPostsList> = ({ posts = DEFAULT_POSTS }) => {
             py={12}
             px={24}
             mr={12}
-            // onClick={orderAsc}
+            onClick={() => setOrder('asc')}
             color="text"
             bgcolor="background"
           >
@@ -46,9 +50,10 @@ export const PostsList: FC<IPostsList> = ({ posts = DEFAULT_POSTS }) => {
           py={12}
           px={24}
           placeholder="Search ..."
+          onChange={(e) => setSearch(e.target.value)}
         />
       </Toolbar>
-      {items.map(({ id, message, created_time }) => (
+      {paginatedItems.map(({ id, message, created_time }) => (
         <Post
           key={id}
           message={message}
@@ -57,8 +62,8 @@ export const PostsList: FC<IPostsList> = ({ posts = DEFAULT_POSTS }) => {
         />
       ))}
       <Button
-        onClick={loadMore}
-        disabled={posts.length === items.length}
+        onClick={nextPage}
+        disabled={filteredItems.length === paginatedItems.length}
       >
         Load more
       </Button>
