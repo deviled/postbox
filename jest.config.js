@@ -1,4 +1,5 @@
 module.exports = {
+  setupFiles: ['<rootDir>/src/__tests__/setup/global.ts'],
   setupFilesAfterEnv: ['<rootDir>/src/__tests__/setup/testingLibrary.ts'],
   timers: 'fake',
   testTimeout: 5000,

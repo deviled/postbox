@@ -46,6 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:13.1.2"],
             ["@types/axios", "npm:0.14.0"],
             ["@types/date-fns", "npm:2.6.0"],
+            ["@types/dotenv", "npm:8.2.0"],
             ["@types/jest", "npm:26.0.22"],
             ["@types/lodash.flatmap", "npm:4.5.6"],
             ["@types/lodash.groupby", "npm:4.6.6"],
@@ -67,6 +68,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["css-loader", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:5.2.1"],
             ["dart-sass", "npm:1.25.0"],
             ["date-fns", "npm:2.21.1"],
+            ["dotenv", "npm:8.2.0"],
             ["eslint", "npm:7.23.0"],
             ["eslint-config-airbnb-typescript", "npm:12.3.1"],
             ["eslint-import-resolver-node", "npm:0.3.4"],
@@ -1419,6 +1421,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/date-fns", "npm:2.6.0"],
             ["date-fns", "npm:2.21.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/dotenv", [
+        ["npm:8.2.0", {
+          "packageLocation": "./.yarn/cache/@types-dotenv-npm-8.2.0-f4d0e3d65b-8b4d00f884.zip/node_modules/@types/dotenv/",
+          "packageDependencies": [
+            ["@types/dotenv", "npm:8.2.0"],
+            ["dotenv", "npm:8.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -4718,6 +4730,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/dotenv-npm-5.0.1-9cab850c63-6e5990d203.zip/node_modules/dotenv/",
           "packageDependencies": [
             ["dotenv", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:8.2.0", {
+          "packageLocation": "./.yarn/cache/dotenv-npm-8.2.0-6b21df4d37-16cb89cbd7.zip/node_modules/dotenv/",
+          "packageDependencies": [
+            ["dotenv", "npm:8.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -9904,6 +9923,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/user-event", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:13.1.2"],
             ["@types/axios", "npm:0.14.0"],
             ["@types/date-fns", "npm:2.6.0"],
+            ["@types/dotenv", "npm:8.2.0"],
             ["@types/jest", "npm:26.0.22"],
             ["@types/lodash.flatmap", "npm:4.5.6"],
             ["@types/lodash.groupby", "npm:4.6.6"],
@@ -9925,6 +9945,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["css-loader", "virtual:7e63e05a4864e692b4d3efef56b4a1957b84591124609050da4b904d3b463fbbf68988c14307337b50fdf45f73c82d553ee0f9669ccb07475a5a665c6ee029c8#npm:5.2.1"],
             ["dart-sass", "npm:1.25.0"],
             ["date-fns", "npm:2.21.1"],
+            ["dotenv", "npm:8.2.0"],
             ["eslint", "npm:7.23.0"],
             ["eslint-config-airbnb-typescript", "npm:12.3.1"],
             ["eslint-import-resolver-node", "npm:0.3.4"],

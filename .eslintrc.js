@@ -10,7 +10,6 @@ module.exports = {
     'react/jsx-props-no-spreading': 0,
     'import/no-default-export': 2,
     'import/prefer-default-export': 0,
-    'jsx-a11y/label-has-associated-control': 0,
     '@typescript-eslint/naming-convention': 0,
   }
 };

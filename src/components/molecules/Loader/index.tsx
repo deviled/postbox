@@ -48,7 +48,7 @@ export const Spinner = styled.span(({ theme }) => css`
 `);
 
 export const Loader: FC<SizingProps & FlexboxProps> = (props) => (
-  <FlexCol minHeight="100vh" {...props}>
+  <FlexCol data-testid="loader" minHeight="100vh" {...props}>
     <Spinner />
   </FlexCol>
 );

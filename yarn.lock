@@ -880,7 +880,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react-hooks@npm:^5.1.1":
+"@testing-library/react-hooks@npm:5.1.1":
   version: 5.1.1
   resolution: "@testing-library/react-hooks@npm:5.1.1"
   dependencies:
@@ -1004,6 +1004,15 @@ __metadata:
   dependencies:
     date-fns: "*"
   checksum: 9b136620fa858d4652ac3fb8bf9918d896e56220bec2c9cb90715dc768f1b3ab13077e4ec2c3ffc85ab8ae0378221a13982bfdc63fe2a685c28f0584bd381ab6
+  languageName: node
+  linkType: hard
+
+"@types/dotenv@npm:8.2.0":
+  version: 8.2.0
+  resolution: "@types/dotenv@npm:8.2.0"
+  dependencies:
+    dotenv: "*"
+  checksum: 8b4d00f8849c550a6888b8f426f85f14171bf1bab53f6b2683bd71a25869a93cb4b960f4fa8de592f2b4c43366240fc9c50d89e6cc1cffffafbb843879c6fdd6
   languageName: node
   linkType: hard
 
@@ -3700,6 +3709,13 @@ __metadata:
   dependencies:
     dotenv: ^5.0.0
   checksum: 32a0c1672f15936b3440d49a64144e8e22712d2612d9c159557b64ece4f991038a586619b5ef01cc7464b7c5b302e96c12057e29847a5506b4bb24cd82931ec5
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:*, dotenv@npm:8.2.0":
+  version: 8.2.0
+  resolution: "dotenv@npm:8.2.0"
+  checksum: 16cb89cbd7b98b053899b8aba8c5044c8fb61a2db8a81fe70360b75035fce5fed53bd7a34d772be717d0880c0321122a4c09423f518025e1b52d96791521b1a7
   languageName: node
   linkType: hard
 
@@ -8261,10 +8277,11 @@ fsevents@^1.2.7:
     "@testing-library/dom": 7.30.3
     "@testing-library/jest-dom": 5.11.10
     "@testing-library/react": 11.2.6
-    "@testing-library/react-hooks": ^5.1.1
+    "@testing-library/react-hooks": 5.1.1
     "@testing-library/user-event": 13.1.2
     "@types/axios": 0.14.0
     "@types/date-fns": 2.6.0
+    "@types/dotenv": 8.2.0
     "@types/jest": 26.0.22
     "@types/lodash.flatmap": 4.5.6
     "@types/lodash.groupby": 4.6.6
@@ -8286,6 +8303,7 @@ fsevents@^1.2.7:
     css-loader: 5.2.1
     dart-sass: 1.25.0
     date-fns: 2.21.1
+    dotenv: 8.2.0
     eslint: 7.23.0
     eslint-config-airbnb-typescript: 12.3.1
     eslint-import-resolver-node: 0.3.4

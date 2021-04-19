@@ -16,6 +16,7 @@ const getPostsFixture = (length: number = 10): IPost[] => Array.from({ length },
     from_id: `user_${index}`,
     from_name: `Name ${index}`,
     created_time: new Date(index * 86400000).toISOString(),
+    message: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ${index}.`,
   }));
 
 export { getPostFixture, getPostsFixture };

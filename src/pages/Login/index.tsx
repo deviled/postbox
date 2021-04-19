@@ -4,17 +4,28 @@ import { Input } from 'components/atoms/Input';
 import { Text } from 'components/atoms/Text';
 import { IRegisterParams } from 'api/requests';
 import { useRegisterQuery } from 'api/mutators';
-import { Loader } from 'components/molecules/Loader';
 import { Button } from 'components/atoms/Button';
-import { FlexCol } from 'components/atoms/Grid';
+import { FlexBox, FlexCol } from 'components/atoms/Grid';
+import { ERROR_MESSAGE } from 'tools/constants';
+import { Loader } from 'components/molecules/Loader';
 import { Form } from './components/Form';
 
+interface IFormValues extends IRegisterParams {
+  error?: string;
+}
+
 export const Login: FC = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm<IRegisterParams>();
   const { isLoading, mutateAsync: registerUser } = useRegisterQuery();
+  const {
+    register, handleSubmit, setError, formState: { errors },
+  } = useForm<IFormValues>();
 
   const onSubmit = useCallback(async (values: IRegisterParams) => {
-    await registerUser(values);
+    try {
+      await registerUser(values);
+    } catch {
+      setError('error', { message: ERROR_MESSAGE });
+    }
   }, [registerUser]);
 
   if (isLoading) {
@@ -47,6 +58,10 @@ export const Login: FC = () => {
         </FlexCol>
 
         <Button type="submit">Submit</Button>
+
+        <FlexBox mt={16} justifyContent="center">
+          <Text color="error">{errors.error?.message}</Text>
+        </FlexBox>
       </Form>
     </FlexCol>
   );
