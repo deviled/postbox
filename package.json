@@ -7,9 +7,9 @@
   "author": "Mindaugas Gudeliūnas <mindaugas.gudeliunas@nordsec.com>",
   "license": "MIT",
   "scripts": {
-    "build": "npx webpack --mode production",
-    "develop": "npx webpack serve --mode development",
-    "lint": "npx eslint ./src --ext .ts,.tsx",
+    "build": "webpack --mode production",
+    "develop": "webpack serve --mode development",
+    "lint": "eslint ./src --ext .ts,.tsx",
     "test": "jest"
   },
   "dependencies": {
